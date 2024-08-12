@@ -61,8 +61,6 @@ def hayattakalma():
     titanic_data.to_csv('D:/titanic.csv', index=False)
     cat1 = titanic_data['Survival Rate']
     sayi = cat1.value_counts()
-    cat1 = titanic_data['Survival Rate']
-    sayi = cat1.value_counts()
     plt.figure(figsize=(9, 3))
     plt.bar(sayi.index, sayi)
     plt.xticks(sayi.index, sayi.index.values, rotation=45)
